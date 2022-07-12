@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Igor Fonseca</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" hrcabecalho-itemef="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+   <link href="./assets/css/reset.css" rel="stylesheet">
+   <link href="./assets/css/base.css" rel="stylesheet">
+   <link href="./assets/css/cabecalho.css" rel="stylesheet">
+   <link href="./assets/css/apresentacao.css" rel="stylesheet">
+   <link href="./assets/css/botoes.css" rel="stylesheet">
+   <link href="./assets/css/rodape.css" rel="stylesheet">
+</head>
+<body>
+   <header class="cabecalho-container">
+      <a href="#" class="cabecalho-logo">Igor Fonseca</a>
+         <nav aria-label="Abrir Menu" id="menuResponsivo" class="cabecalho-menu">
+            <button id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu<span id="hamburguer"></span></button>
+            <ul class="cabecalho-lista" role="menu">
+               <li class="cabecalho-item"><a class="cabecalho-link" href="#">Ínicio</a></li>
+               <li class="cabecalho-item"><a class="cabecalho-link" href="#">Sobre</a></li>
+               <li class="cabecalho-item"><a class="cabecalho-link" href="#">Projetos</a></li>
+               <li class="cabecalho-item"><a class="cabecalho-link" href="#">Contato</a></li>
+            </ul>
+         </nav>
+   </header>
+   <main>
+      <section class="texto">
+         <div class="texto-container">
+            <h2 class="texto-apresentacao chamada">Seja criativo, Seja inovador.</h2>
+            <p class="texto-apresentacao apresentacao-mobile">Desenvolvedor Web</p>
+            <p class="texto-apresentacao texto-meio">Sendo capaz de me comunicar para uma ampla variedade de pessoas.</p>
+            <p class="texto-apresentacao despedida">Estou feliz por você estar aqui!</p>
+         </div>
+         <div class="foto">
+            <img class="texto-foto" src="./assets/imagens/perfil.jpg" alt="Igor Fonseca">         
+         </div>
+      </section>
+      <form class="botoes">
+         <label class="botao-fake"><input class="btn" type="submit" value="Portifólio" id="botao-portfolio"></label>
+         <label class="botao-fake"><input class="btn2" type="submit" value="Currículo" id="botao-fake"></label>
+      </form>
+   </main>
+   <footer class="rodape">
+      <div class="redes-sociais">
+          <a href="https://www.linkedin.com/in/igor-fonseca-1a7ab143/"target="_blank"><img class="logo-rede1" src="./assets/imagens/linkedin-icon.png" alt="Likedin"></a>
+          <a href="https://github.com/IgorKibb"target="_blank"><img class="logo-rede" src="./assets/imagens/github-icon.png" alt="Github"></a>
+      </div>
+   </footer>
+   <script src="./assets/js/menu-responsivo.js"></script>
+   <script src="./assets/js/botoes.js"></script>
+</body>
+</html>
