@@ -1,0 +1,75 @@
+.texto{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 1.2rem;
+   margin-left: 15rem;
+   margin-right: 15rem;
+   padding-top: 3.5rem;
+}
+.texto-container{
+   flex-direction: row;
+   
+}
+
+.texto-apresentacao{
+   color: var(--turqueza);
+   font-size: 1.4rem;
+   font-family: var(--poppins);
+   line-height: 1.3rem;
+   width: 430px;
+}
+.chamada{
+   font-size: 3.2rem;
+   line-height: 3.5rem;
+   margin-top: 0;
+   padding-bottom: 1rem;
+}
+.foto{
+   flex-direction: row;
+}
+.texto-foto{
+   margin-right: 3.5rem;
+   width: 30vh;
+}
+.despedida{
+   font-style: italic;
+   font-weight: 200;
+}
+
+@media screen and (max-width: 500px){
+   .texto{
+      display: block;
+      justify-content: center;
+      margin-top: 0rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 0rem;
+      padding-top: 0rem;
+   }
+   .texto-container{
+      margin-top: 14rem;
+      position: absolute;
+   }
+   .texto-apresentacao{
+      font-size: 1.2rem;
+      margin-right: 5px;
+      width: 90vw;
+   }
+   .apresentacao-mobile{
+      color: transparent;
+   }
+   .chamada{
+      font-size: 2.5rem;
+      padding-bottom: 0;
+   }
+   .texto-foto{
+      align-content: center;
+      margin-right: 0px;
+      padding-top: 3.5rem;
+      width: 96vw;
+   }
+   .despedida{
+      padding-top: 12rem;
+      text-align: center;
+   }
+}

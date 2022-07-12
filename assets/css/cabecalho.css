@@ -1,0 +1,130 @@
+.cabecalho-container{
+   align-items: center;
+   display: flex;
+   height: 70px;
+   justify-content: space-between;
+   margin-top: 1.5rem;
+   margin-bottom: 1.1rem;
+   margin-left: 15rem;
+   margin-right: 15rem;
+
+}
+
+.cabecalho-logo{
+   font-size: 1.5rem;
+   color: var(--turqueza);
+   font-family: var(--poppins);
+   font-weight: 300;
+}
+.cabecalho-logo:hover{
+   color: var(--azul);
+   font-weight:400;
+}
+.cabecalho-menu{
+   color: var(--turqueza);
+   display: block;
+   font-size: 1.05rem;
+   font-weight: normal;
+   margin-right: 1.25rem;
+   text-decoration: none; 
+}
+.cabecalho-lista{
+   display: flex;
+}
+.cabecalho-item{
+   padding: 1.5rem;
+}
+.cabecalho-link{
+   font-weight: bold;
+   display: block;
+   padding: 0.5rem;
+}
+.cabecalho-link:hover{
+   color: var(--azul);
+   text-decoration: underline;
+}
+
+#btn-mobile{
+   display: none;
+}
+
+@media screen and (max-width: 500px){
+   .cabecalho-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 0;
+   }
+   .cabecalho-logo{
+      width: 100%;
+      font-weight: 500;
+       
+   }
+   .cabecalho-lista{
+      background: var(--turqueza);
+      color:var(--base);
+      display: block;
+      height: 0px;
+      position: absolute;
+      right: 0px;
+      top: 70px;
+      transition: .6s;
+      visibility: hidden;
+      width: 100%;
+      z-index: 1000;
+   }
+   #btn-mobile{
+      display: block;
+   }
+
+   #menuResponsivo.active .cabecalho-lista{
+      height: calc(100vh - 85px);
+      visibility: visible;
+      overflow: auto;
+   }
+
+   .cabecalho-link{
+      border-bottom:2px solid rgb(0, 0, 0, .05);
+      font-size: 1.4rem;
+      margin: 0 1rem;
+      padding: 1rem 0;
+      text-align: center;
+   }
+
+   #btn-mobile{
+      background: none;
+      border: none;
+      color: var(--turqueza);
+      cursor: pointer;
+      display: flex;
+      font-size: 1.3rem;
+      gap: .5rem;
+      padding: .5rem 1rem;
+   }
+   #hamburguer{
+      display: block;
+      border-top: 3px solid;
+      width: 25px;
+   }
+   #hamburguer::after, #hamburguer::before{
+      background: currentColor; /*o currentColor copia a cor que estiver no pai*/
+      content: '';
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      position: relative;
+      transition: .3s;
+      width: 25px;
+   }
+   #menuResponsivo.active #hamburguer{
+      border-top-color: transparent;
+   }
+
+   #menuResponsivo.active #hamburguer::before{
+      transform: rotate(135deg);
+   }
+   #menuResponsivo.active #hamburguer::after{
+      transform: rotate(-135deg);
+      top: -8px;
+   }
+}

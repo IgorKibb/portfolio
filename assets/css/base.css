@@ -1,0 +1,21 @@
+:root{
+   --base: #000000;
+   --azul: #2493cb;
+   --cinza: #242424;
+   --turqueza: #40E0D0;
+
+   --poppins: 'Poppins', sans-serif;
+}
+
+body{
+   background: linear-gradient(to right, #242424 50%, #000000 50%);
+   background-size: 100vw;
+}
+
+@media screen and (max-width: 500px){
+    
+   body{
+      background: var(--base);
+   }
+   
+}
